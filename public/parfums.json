@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Chanel No.5",
+    "price": 120,
+    "description": "Classic floral perfume with timeless elegance.",
+    "image": "/img/CHanels.png",
+    "details" : "Classic floral:blablala"
+  },
+  {
+    "id": 2,
+    "title": "Dior Sauvage",
+    "price": 95,
+    "description": "Fresh and spicy scent inspired by wild nature.",
+    "image": "/img/Sauvages.png"
+  },
+  {
+    "id": 3,
+    "title": "Gucci Bloom",
+    "price": 100,
+    "description": "Elegant floral scent celebrating modern femininity.",
+    "image": "/img/Gucci-.png"
+  },
+  {
+    "id": 4,
+    "title": "Yves Saint Laurent Black Opium",
+    "price": 110,
+    "description": "Sweet and warm fragrance with coffee and vanilla notes.",
+    "image": "/img/opi-removebg-preview.png"
+  },
+  {
+    "id": 5,
+    "title": "Marc Jacobs Daisy",
+    "price": 90,
+    "description": "Fresh and youthful floral perfume with playful charm.",
+    "image": "/img/images__3_-removebg-preview.png"
+  },
+  {
+    "id": 6,
+    "title": "Versace Eros",
+    "price": 115,
+    "description": "Powerful and masculine scent with mint and vanilla.",
+    "image": "/img/images__2_-removebg-preview.png"
+  },
+  {
+    "id": 7,
+    "title": "Tom Ford Black Orchid",
+    "price": 150,
+    "description": "Luxurious dark floral scent with black truffle and ylang-ylang.",
+    "image": "/img/téléchargement-removebg-preview.png"
+  },
+  {
+    "id": 8,
+    "title": "Armani Si",
+    "price": 105,
+    "description": "Elegant, sophisticated fragrance with notes of blackcurrant nectar.",
+    "image": "/img/images__1_-removebg-preview.png"
+  },
+  {
+    "id": 9,
+    "title": "Lancome La Vie Est Belle",
+    "price": 98,
+    "description": "Sweet floral scent symbolizing happiness and freedom.",
+    "image": "/img/lancome-la-vie-est-belle-eau-de-parfum-34-oz-d-20170824182526993_499635-removebg-preview.png"
+  },
+  {
+    "id": 10,
+    "title": "Burberry Her",
+    "price": 92,
+    "description": "Fruity and floral scent with berries and jasmine.",
+    "image": "/img/images-removebg-preview.png"
+  },
+  {
+    "id": 11,
+    "title": "Calvin Klein Euphoria",
+    "price": 85,
+    "description": "Exotic fruity-floral fragrance with pomegranate and orchid.",
+    "image": "/img/images__4_-removebg-preview.png"
+  },
+  {
+    "id": 12,
+    "title": "Prada Candy",
+    "price": 99,
+    "description": "Sweet and playful perfume with caramel and musk.",
+    "image": "/img/pradacandyflorale-removebg-preview.png"
+  },
+  {
+    "id": 13,
+    "title": "Jo Malone Peony & Blush Suede",
+    "price": 130,
+    "description": "Delicate floral fragrance with red apple and peony.",
+    "image": "/img/653029d8-a141-4828-a996-326359c114c9-removebg-preview.png"
+  },
+  {
+    "id": 14,
+    "title": "Carolina Herrera Good Girl",
+    "price": 115,
+    "description": "Seductive scent mixing cocoa, almond, and tuberose.",
+    "image": "/img/carolina-herrera-good-girl-blush-elixir-edp-30ml-900x900-removebg-preview.png"
+  },
+  
+ 
+  {
+    "id": 15,
+    "title": "Viktor & Rolf Flowerbomb",
+    "price": 140,
+    "description": "Explosive floral scent with jasmine, rose, and patchouli.",
+    "image": "/img/flowerbomb-removebg-preview.png"
+  }
+]

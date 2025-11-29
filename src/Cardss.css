@@ -3,6 +3,7 @@
   --bgcolor:#18181b;
   --main : #eaeaeabb;
   --paragraphe : #111111b1;
+  --span : #caa25a;
 }
 .cardss{
 display: grid;
@@ -47,7 +48,7 @@ border: 1px solid var(--bgcolor);
   display: inline-block;
   
   font-weight: bold;
-  color: #623028;
+  color: var(--span);
   font-size: 1.1rem;
   
   margin-top: 10px;

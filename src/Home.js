@@ -1,9 +1,9 @@
 import React from "react";
 import './Home.css';
 import Card from "./Card";
-import ChanelImage from './Chanel Coco Mademoiselle (2).jpeg';
-import GucciBloom from './Gucci Bloom.jpeg';
-import TomFordOudWood from  './Tom Ford Oud Wood.jpeg';
+import ChanelImage from './Chanel Coco Mademoiselle (2).png';
+import GucciBloom from './Gucci.png';
+import TomFordOudWood from  './tom ford oud wood.png';
 
 
 export default function Home(){

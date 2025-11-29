@@ -4,7 +4,13 @@ import './App.css';
 import { Route, BrowserRouter as Router ,Link, Routes} from 'react-router-dom';
 
 
+
+
 export default function Navbar() {
+    function myFunction(){
+        var element = document.body;
+   element.classList.toggle("dark-mode");
+    }
   return (
     <div>
        <nav className='navbar'>
@@ -20,6 +26,7 @@ export default function Navbar() {
                  <Link to="/Shop" className='nav-link'>Shop</Link>
                     <Link to="/Login" className='nav-link'>Login</Link>
     </div>
+    <button onClick={myFunction}>Dark mode</button>
     </nav>
     </div>
   )

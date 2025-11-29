@@ -1,0 +1,38 @@
+$background : #f0f0f0;
+$color : #323232;
+$backgroundbutton: #95b4c8;
+$p:#9f9797;
+.all{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: $background;
+    
+       
+        h1{
+           
+            font-size: 5em;
+            padding: 10px;
+            color:$color;
+           
+        }
+        p{
+            padding: 10px;
+            color: $p;
+        }
+        input{
+            padding: 12px 27px;
+            margin: 10px;
+            background-color: $backgroundbutton;
+            border: none;
+            border-radius: 15px  3px ;
+            color:$color;
+            font-weight: bold;
+        }
+        
+    
+   
+}

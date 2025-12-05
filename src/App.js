@@ -7,13 +7,15 @@ import Login from './Login';
 import Footer from './Footer';
 import PageNotFound from './PageNotFound';
 import Navbar from './Navbar'; 
+import { useState } from 'react';
 function App() {
+  const [panier, setPanier] = useState([]);
   return (
     <Router>
       <Routes>
         <Route path='/Home' element={
           <>
-            <Navbar />
+            <Navbar panier={panier}/>
             <Home />
             <Footer />
           </>
@@ -21,7 +23,7 @@ function App() {
         <Route path='/Products' element={
           <>
             <Navbar />
-            <Products />
+            <Products panier={panier} setPanier={setPanier}  />
             <Footer />
           </>
         } />
@@ -35,7 +37,7 @@ function App() {
         <Route path='/Shop' element={
           <>
             <Navbar />
-            <Shop />
+            <Shop panier={panier}/>
             <Footer />
           </>
         } />

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
 import './Cardss.css';
-export default function Products(){
+export default function Products({panier, setPanier}){
 
     //state pour produit
   const [parfum , setlisteproduit] = useState([])
@@ -13,7 +13,8 @@ export default function Products(){
 
 //resultat 
 const resultat = parfum.map((index,key)=>(
-    <Cards products={index} key={key} />
+    <Cards products={index} key={key} panier={panier}
+      setPanier={setPanier} />
 ))
 
 //compenentDidMount

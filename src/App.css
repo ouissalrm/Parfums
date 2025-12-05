@@ -333,4 +333,18 @@ text-align: center;
     width: 55%;
     margin: auto;
     margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.count .moin{
+  color: var(--span);
+  border: 1px solid var(--bgcolor);
+  padding: 0px 10px;
+ 
+}
+.count .plus{
+  color:var(--span);
+  border: 1px solid var(--bgcolor);
+  padding: 0px 10px;
+ 
 }

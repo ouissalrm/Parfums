@@ -30,7 +30,7 @@ export default function Shop({ panier }) {
                 QUANTITY
             </span>
             <div className="count">
-                <span>-</span> 1 <span>+</span>
+                <span className="moin">-</span> 1 <span className="plus">+</span>
             </div>
             <button className="mad">MAD {item.price} </button>
        
@@ -44,7 +44,12 @@ export default function Shop({ panier }) {
       </div>
 
 <div className="money">
-    summary
+  <div className="mones">
+    <h1>ORDER SUMMARY</h1>
+    <p>Total : </p> <h2>800 MAD</h2><hr></hr>
+    <button>PROCEED TO CHECKOUT </button><hr></hr>
+    <p>continue shoppnig</p>
+  </div>
 </div>
 
 

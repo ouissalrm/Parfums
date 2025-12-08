@@ -37,7 +37,7 @@ function App() {
         <Route path='/Shop' element={
           <>
             <Navbar />
-            <Shop panier={panier}/>
+            <Shop panier={panier} setPanier={setPanier} />
             <Footer />
           </>
         } />

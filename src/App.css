@@ -383,9 +383,9 @@ color: var(--paragraphe);
  padding: 30px 40px;
  font-size: 1.2em;
 border: 3px solid var(--span);
- background-color:var(--bgcolor);
+ background-color:var(--copybg);
 
-color: var(--copybg);
+color: var(--bgcolor);
  border-radius: 3px  20px;
  font-weight:400;
   
@@ -401,3 +401,78 @@ padding-bottom: 100px;
 
 
 }
+
+.OurStory{
+
+  width: 50%;
+  margin: auto;
+  margin-top: 40px;
+  
+}
+.OurStory h2{
+  color: var(--bgcolor);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     text-align: center;
+     font-size: 2.4em;
+     margin-bottom: 40px;
+}
+.OurStory p{
+  letter-spacing: 1px;
+   font-size: 1.1em;
+   background-color: #f1f1f1b1;
+   padding: 30px;
+  box-shadow: 0px 3px 10px rgb(0, 0,0, 0.3);
+  border-radius: 40px 70px;
+
+
+}
+.OurCraftsmanship{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.OurVision {
+  
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-around;
+}
+.OurVision img ,.OurCraftsmanship img{
+  margin: 10px;
+  border-radius: 20px;
+  height: 360px;
+  
+}
+.OurVision p ,.OurCraftsmanship p{
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ padding: 15px;
+
+  letter-spacing: 1px;
+   font-size: 1.1em;
+
+
+  border-radius: 40px;
+
+}
+.Values{
+
+ padding-top: 80px;
+  display: flex;
+
+  padding-bottom: 80px;
+}
+.Values h3{
+  color: var(--bgcolor);
+  text-align: center;
+  font-size: 1.6em;
+  margin: 15px;
+  
+}
+.Values p{
+  color: #3a3a3a;
+  width: 90%;
+  margin: auto;
+}
+    

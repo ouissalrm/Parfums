@@ -16,7 +16,7 @@ function App() {
         <Route path='/Home' element={
           <>
             <Navbar panier={panier}/>
-            <Home />
+            <Home panier={panier} setPanier={setPanier} />
             <Footer />
           </>
         } />

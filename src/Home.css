@@ -78,4 +78,56 @@ section p{
     color: var(--paragraphe);
     text-align: center;
    
+}
+
+@media (max-width: 768px) {
+  .title{
+    width: 90%;
+    padding-top: 80px;
+  }
+  .title h1{
+    font-size: 2rem;
+    margin-left: 0;
+    text-align: left;
+  }
+  .home{
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .buttons{
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px){
+  .title h1{font-size: 1.6rem;padding-bottom: 10px}
+  .home .button2, .home .button1{padding: 10px 14px; font-size: 0.95rem}
+}
+
+/* Animations & hover */
+.title h1{
+  animation: slideInLeft 700ms cubic-bezier(.2,.9,.3,1) 120ms both;
+}
+.buttons{ animation: fadeInUp 600ms ease 220ms both; }
+.home .button2, .home .button1{ transition: transform 0.18s ease, box-shadow 0.18s ease; }
+.home .button2:hover, .home .button1:hover{
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+section h1{ animation: fadeInUp 680ms ease 80ms both; }
+
+@keyframes slideInLeft{
+  from{ opacity:0; transform: translateX(-18px); }
+  to{ opacity:1; transform: translateX(0); }
+}
+@keyframes fadeInUp{
+  from{ opacity:0; transform: translateY(12px); }
+  to{ opacity:1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .title h1, .buttons, section h1, .card{ animation: none; transform: none; opacity: 1; }
+  .home .button2, .home .button1{ transition: none; }
 } 

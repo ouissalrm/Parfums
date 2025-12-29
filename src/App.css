@@ -440,9 +440,9 @@ text-align: center;
 }
 
 .mones{
-
-  height: 420px;
   border: 1px solid var(--bgcolor);
+  height: auto;
+  max-height: none;
 }
 .mones .title_sum {
   font-size: large;

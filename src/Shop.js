@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Shop.scss";
 
 export default function Shop({ panier, setPanier }) {
 
@@ -57,7 +58,7 @@ const supprimer = (id)=>{
 
                   <div className="shop-card">
                     <div className="image-Article">
-                      <img src={item.image} width="150" />
+                      <img className="product-img" src={item.image} alt={item.title} />
                     </div>
 
                     <div className="title-Article">

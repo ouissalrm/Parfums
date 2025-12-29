@@ -1,0 +1,230 @@
+$bg: #f7f7f8;
+$card-bg: #ffffff;
+$text: #1f1f1f;
+$muted: #6b6b6b;
+$accent: #caa25a;
+$border: #e6e6e6;
+$shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+.shop{
+  width: 100%;
+  max-width: 99%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 70% 30%; 
+  padding: 16px;
+  background: $bg;
+  align-items: start;
+ 
+
+  
+  .left{ width: 100%; }
+  .money{ width: 100%; }
+
+  @media (max-width: 900px){
+    grid-template-columns: 1fr;
+    padding: 12px;
+    gap: 12px;
+
+   
+    .left, .money { width: 100%; }
+    .shop-card { grid-template-columns: 100px 1fr; }
+    .prix { width: 100%; margin-left: 0; margin-top: 12px; }
+  }
+}
+
+.produitShop{
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 18px;
+  
+  align-items: start;
+  width: 100%;
+  padding: 6px;
+}
+
+
+@media (max-width: 900px){
+  .produitShop{ grid-template-columns: 1fr; gap: 14px; }
+}
+@media (max-width: 480px){
+  .produitShop{ grid-template-columns: 1fr; gap: 12px; }
+  .shops{ padding: 12px; }
+}
+
+.shops{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px;
+  width: 95%;
+  
+  background: $card-bg;
+  border: 1px solid $border;
+  border-radius: 12px;
+  transition: transform .25s ease, box-shadow .25s ease;
+  animation: fadeInUp .45s ease both;
+
+
+  &:hover{
+    transform: translateY(-6px);
+    box-shadow: $shadow;
+  }
+
+  @media (min-width: 721px){
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.shop-card{
+  display: grid;
+  width: 10%;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  align-items: center;
+
+  .image-Article{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-Article .product-img{
+    width: 100%;
+    height: 100%;
+    max-width: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform .45s ease;
+    display: block;
+  }
+
+  &:hover .image-Article .product-img{
+    transform: scale(1.04);
+  }
+
+  @media (max-width: 900px){
+    grid-template-columns: 100px 1fr;
+    .image-Article{ width: 100px; height: 100px; }
+    .image-Article .product-img{ max-width: 100px; }
+  }
+
+  @media (max-width: 720px){
+    grid-template-columns: 1fr;
+    .image-Article{ width: 100%; height: auto; }
+    .image-Article .product-img{ max-width: 240px; width: 100%; height: auto; margin: 0 auto; }
+  }
+}
+
+.title-Article h3{
+  color: $text;
+  margin: 0 0 8px 0;
+}
+
+.btn-supprimer{
+  background: transparent;
+  border: 1px solid $border;
+  color: $text;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .18s ease, transform .12s ease;
+
+  &:hover{
+    background: lighten($accent, 36%);
+    transform: translateY(-3px);
+  }
+}
+
+.prix{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  .count{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .moin, .plus{
+      cursor: pointer;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid $border;
+      transition: background .12s ease, color .12s ease;
+    }
+    .moin:hover, .plus:hover{
+      background: $accent;
+      color: #fff;
+      border-color: $accent;
+    }
+  }
+
+  .mad{
+    background: $accent;
+    color: #fff;
+    border: none;
+    
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .12s ease;
+
+    &:hover{ transform: translateY(-4px); box-shadow: 0 8px 20px rgba(202,162,90,0.28);}    
+ 
+  }
+}
+
+.mones{
+  background: $card-bg;
+  border-radius: 12px;
+  padding: 18px;
+  border: 1px solid $border;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+  
+
+  
+  max-height: 60vh;
+  overflow-y: auto;
+  width: 100%;
+
+}
+
+@media (max-width: 720px){
+  .mones{ max-height: none; }
+}
+
+.title_sum{ font-weight: 500; text-align:center; }
+
+.check{
+  width: 70%;
+  background: $accent;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: transform .14s ease;
+  &:hover{ transform: translateY(-4px); }
+}
+
+.shopping{ text-align: center; margin-top: 12px; color: $muted }
+
+@keyframes fadeInUp{
+  from{ opacity: 0; transform: translateY(10px); }
+  to{ opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px){
+  .shop{ padding: 12px; }
+  .shops{ padding: 12px; }
+  .prix .mad{ width: 100%; }
+}
